@@ -69,16 +69,4 @@ public class LoginStepDefs {
         Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle));
 
     }
-    @Given("the user logged in as {string}")
-    public void the_user_logged_in_as(String userType) {
-        String url = ConfigurationReader.get("url");
-        Driver.get().get(url);
-
-        String username = ConfigurationReader.get(userType+"_username");
-        String password = ConfigurationReader.get(userType+"_password");
-
-        LoginPage loginPage = new LoginPage();
-        loginPage.login(username,password);
-
-    }
 }
