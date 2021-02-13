@@ -1,7 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: com.vytrack.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.512 s <<< FAILURE! - in com.vytrack.runners.CukesRunner
-Verify Create Calender Event(Contacts page)  Time elapsed: 27.473 s  <<< FAILURE!
-java.lang.AssertionError
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.048 s <<< FAILURE! - in com.vytrack.runners.CukesRunner
+initializationError(com.vytrack.runners.CukesRunner)  Time elapsed: 0.011 s  <<< ERROR!
+io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/Asus/Desktop/javaws/EU4CucumberSelenium/src/test/resources/features/AccountTypes.feature
+Caused by: io.cucumber.core.gherkin.vintage.internal.gherkin.ParserException$CompositeParserException: 
+Parser errors:
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: Driver user'
+(2:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given the user logged in as "driver"'
+(3:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When the user navigates to "Activities" "Calendar Events"'
+(4:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then the title contains "Calendar Events - Activities"'
+(6:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: Sales manager user'
+(7:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given the user logged in as "sales manager"'
+(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When the user navigates to "Customers" "Accounts"'
+(9:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then the title contains "Accounts - Customers"'
+(11:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: Store manager user'
+(12:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given the user logged in as "store manager"'
+(13:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When the user navigates to "Customers" "Contacts"'
 
