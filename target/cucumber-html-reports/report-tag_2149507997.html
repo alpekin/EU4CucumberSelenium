@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>12 Feb 2021, 20:04</td>
+      <td>14 Feb 2021, 16:33</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@wip</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">4</td>
+          <td class="total">6</td>
 
           <td >0</td>
-          <td  class="failed"    >1</td>
-          <td class="total">1</td>
+          <td  class="failed"    >2</td>
+          <td class="total">2</td>
 
-          <td class="duration" data-value="26456408100">26.456</td>
+          <td class="duration" data-value="38420493100">38.420</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,24 +173,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_4135879342.html">Contacts page</a>
+      <a href="report-feature_1321075111.html">Account types</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">26.456</span>
+  <span class="lead-duration duration">30.858</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Create Calender Event</span>
+  <span class="name">Driver user</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -221,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.vytrack.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -254,92 +255,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is on the login page</span>
+  <span class="name">the user logged in as <span class="argument">&quot;driver&quot;</span></span>
 
-  <span class="lead-duration duration">6.741</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the user enters the sales manager information</span>
-
-  <span class="lead-duration duration">10.604</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user navigates to <span class="argument">&quot;Activities&quot;</span> <span class="argument">&quot;Calendar Events&quot;</span></span>
-
-  <span class="lead-duration duration">7.090</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the title contains <span class="argument">&quot;Calendars&quot;</span></span>
-
-  <span class="lead-duration duration">2.020</span>
+  <span class="lead-duration duration">30.858</span>
 
 </div>
 
@@ -351,19 +271,116 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
+          <a>io.github.bonigarcia.wdm.config.WebDriverManagerException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.vytrack.step_definitions.LoginStepDefs.the_title_contains(LoginStepDefs.java:69)
-	at &#10045;.the title contains &quot;Calendars&quot;(file:///C:/Users/Asus/Desktop/javaws/EU4CucumberSelenium/src/test/resources/features/Contacts.feature:14)
+        <pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:747)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(ContactsStepDefs.java:23)
+	at &#10045;.the user logged in as &quot;driver&quot;(file:///C:/Users/Asus/Desktop/javaws/EU4CucumberSelenium/src/test/resources/features/AccountTypes.feature:4)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.online.UrlHandler.getCandidateUrl(UrlHandler.java:284)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:603)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:535)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(ContactsStepDefs.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">the user navigates to <span class="argument">&quot;Activities&quot;</span> <span class="argument">&quot;Calendar Events&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">the title contains <span class="argument">&quot;Calendar Events - Activities&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -383,7 +400,136 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">5.999</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>Error message</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:747)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:20)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.online.UrlHandler.getCandidateUrl(UrlHandler.java:284)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:603)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:535)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:55)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1321075111.html">Account types</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">7.562</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Store manager user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -395,13 +541,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.vytrack.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.778</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -410,21 +556,261 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>screenshot</a>
-      <a href="embeddings/embedding_-1011690417.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
+
+        </div>
     </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1011690417.png">
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the user logged in as <span class="argument">&quot;store manager&quot;</span></span>
+
+  <span class="lead-duration duration">7.562</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>io.github.bonigarcia.wdm.config.WebDriverManagerException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:747)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(ContactsStepDefs.java:23)
+	at &#10045;.the user logged in as &quot;store manager&quot;(file:///C:/Users/Asus/Desktop/javaws/EU4CucumberSelenium/src/test/resources/features/AccountTypes.feature:14)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.online.UrlHandler.getCandidateUrl(UrlHandler.java:284)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:603)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:535)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(ContactsStepDefs.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">the user navigates to <span class="argument">&quot;Customers&quot;</span> <span class="argument">&quot;Contacts&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">the title contains <span class="argument">&quot;Contacts - Customers&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">4.531</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>Error message</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:747)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:20)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download chromedriver 88.0.4324.96
+	at io.github.bonigarcia.wdm.online.UrlHandler.getCandidateUrl(UrlHandler.java:284)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:603)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:535)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:744)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:541)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at com.vytrack.utilities.Driver.get(Driver.java:30)
+	at com.vytrack.step_definitions.Hooks.tearDown(Hooks.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:55)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
         </div>
     </div>
