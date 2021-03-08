@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",  //connection with features folder
         glue = "com/vytrack/step_definitions",     //connection with step definitions folder
         dryRun = false,
-        tags = "@smoke"
+        tags = "@wip"
 
 )
 public class CukesRunner {

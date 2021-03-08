@@ -6,7 +6,7 @@ Feature: Contacts page
     When the user navigates to "Customers" "Contacts"
     Then default page number should be 1
 
-  @wip
+
   Scenario: Verify Create Calender Event
     Given the user is on the login page
     And the user enters the sales manager information
@@ -59,3 +59,10 @@ Feature: Contacts page
       | user           | firstName | lastName  |
       | user10         | Brenden   | Schneider |
       | storemanager85 | Stephan   | Haley     |
+
+  @wip @db
+  Scenario: Contacts test with email
+    Given the user logged in as "sales manager"
+    And the user navigates to "Customers" "Contacts"
+    When the user clicks the "mbrackstone9@example.com" from contacts
+    Then the information should be same with database
